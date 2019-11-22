@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    margin: auto;
+    max-width: 1024px;
+}
+.banner{
+    background-image: url('https://upload.cc/i1/2019/10/16/J7reTk.png'); 
+    background-repeat:no-repeat;
+    height: 380px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+.banner h1{
+    padding-top: 89px;
+    padding-bottom: 96px;
+    display: block;
+    font-size: 40px;
+    color: #FFFFFF;
+    letter-spacing: 3.89px;
+}
+.banner .allDistrict{
+    display: block;
+    margin: auto;
+    background: rgba(255,255,255,0.70);
+    border: 3px solid #FFFFFF;
+    border-radius: 3px;
+    width: 452px;
+    height: 48px;
+    font-size: 18px;
+    color: #000000;
+    line-height: 21px;
+    margin-bottom: 79px;
+}
+.hotDistrict{
+    position: relative;
+    width: 800px;
+    height: 112px;
+    background: #FFFFFF;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20);
+    border-radius: 5px;
+    margin: 0 auto;
+    z-index: 2;
+}
+.hotDistrict h4{
+    padding-top: 20px;
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 14px;
+}
+.hotDistrict input{
+    width: 130px;
+    height: 42px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 750;
+    color: #FFFFFF;
+    border: none;
+    margin: 0 25px;
+}
+.hotDistrict input:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+input:focus{
+    outline: none;
+}
+.hotDistrict .purple{
+    background-color: #8A82CC;
+}
+.hotDistrict .pink{
+    background-color: #FFA782;
+}
+.hotDistrict .yellow{
+    background-color: #F5D005;
+}
+.hotDistrict .blue{
+    background-color: #559AC8;
+}
+.line{
+    position: relative;
+    border-bottom: 2px dashed #559AC8;
+    width: 900px;
+    position: relative;
+    top: 150px;
+    margin: 0 auto;
+}
+.line .pattern{
+    position: absolute;
+    border: 3px solid #559AC8;
+    background-color: #fff;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -45%);
+}
+.line .triangle{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 5px;
+    border-width: 10px;
+    border-color: #559AC8 transparent transparent transparent;
+    border-style:solid;
+    transform: translate(-50%,-15%)
+}
+
+/* --------------------------------------- */
+
+.container{
+    position: relative;
+    padding-top: 210px;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20);
+}
+.container h2{
+    text-align: center;
+}
+.container .allAttractions{
+    display: flex;
+    padding: 32px 32px 0 32px;
+    flex-wrap: wrap;
+}
+.container .attractions{
+    background: #FFFFFF;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20);
+    margin: 18px 8px;
+}
+.container .pic{
+    position: relative;
+    background-position:center;
+    background-size: cover;
+    width: 464px;
+    height: 155px;
+}
+.container .pic:hover{
+    cursor: pointer;
+}
+.container .pic h3{
+    display: inline-block;
+    font-size: 24px;
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 14px;
+    left: 22px;
+}
+.container .pic h4{
+    font-size: 16px;
+    color: #FFFFFF;
+    position: absolute;
+    right: 24px;
+    bottom: 11px;
+}
+.container .introduction{
+    position: relative;
+    padding: 17px;
+    margin-left: 20px;
+    
+}
+.container .openTime::before,.container .add::before,
+.container .telephone::before{
+    content:'';
+    position: absolute;
+    display: block;
+    left: -27px;
+}
+.container .openTime::before{
+    width: 18px;
+    height: 18px;
+    left: -7px;
+    background: url('https://upload.cc/i1/2019/10/16/msOEZg.png');
+    top:25px;  
+}
+.container .add::before{
+    width: 16px;
+    height: 20px;
+    left: -6px;
+    top:57px;
+    background: url('https://upload.cc/i1/2019/10/16/oiqbh0.png');
+}
+.container .telephone::before{
+    width: 12px;
+    height: 20px;
+    left: -3px;
+    background: url('https://upload.cc/i1/2019/10/16/3scaIT.png');
+}
+.container p{
+    font-size: 16px;
+    line-height: 2.1em;
+    display: flex;
+    align-items: center;
+}
+
+/* 待熟悉 text-overflow 用法 ! ! ! */
+.container .p_overflow{
+    display: block;
+    width:400px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    min-width: 0;
+}
+.container .p_overflow:hover::after{
+    content: attr(data-overflow);
+    position: absolute;
+    font-weight: bold;
+    left: 15px;
+    background-color: #fff;
+    padding:0 10px;
+    box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.20);
+    border-radius: 10px;
+    white-space: normal;
+}
+.ticketInfo{
+    position: absolute;
+    right: 24px;
+    bottom: 19px;
+}
+.ticketInfo::before{
+    content:'';
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    right: 70px;
+    background: url('https://upload.cc/i1/2019/10/16/IEOv2n.png');
+}
+
+/* 彈跳視窗 */
+.popUp{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    background-color: #fff;
+    box-shadow: 0 1px 10px 0 rgba(0,0,0,0.20);
+    border-radius: 20px;
+    width: 1100px;
+    max-height: 900px;
+    z-index: 10;
+    transition: 0.5s;
+    margin-left: -580px;
+    margin-top: -450px;
+}
+.head{
+    display: flex;
+    font-size: 36px;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+.head .close{
+    font-weight: 800;
+    position: relative;
+    color: rgb(49, 147, 212);
+    font-size: 28px;
+    padding: 1px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+.head .close::after{
+    position: absolute;
+    content: '';
+    border: 2px solid rgb(49, 147, 212);
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    left: -5.07px;
+    bottom: 4.8px;
+}
+.popUp .divideLine{
+    width: 100%;
+    align-self: center;
+    border: 1px solid rgb(49, 147, 212);
+    margin: 20px;
+}
+.popPic{
+    align-self: center;
+}
+.popPic img{
+    width: 900px;
+    height: 600px;
+    background-position:center;
+    background-size: cover;
+}
+.popContent{
+    margin-top: 10px;
+    line-height: 1.5em;
+}
+.popHidden{
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    pointer-events: none;
+    transform: translate(50px);
+}
+
+/* 分頁 */
+.pageList{
+    text-align: center;
+    padding: 41px;
+}
+.pageList{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.allPage{
+    margin: 0 12px;
+    font-size: 16px;
+    color: #000000;
+}
+.allPage:hover{
+    cursor: pointer;
+    color: #559AC8;
+    text-decoration: underline;
+}
+.prev, .next{
+    font-size: 16px;
+}
+.prev:hover{
+    cursor: pointer;
+    color: #559AC8;
+}
+.next:hover{
+    cursor: pointer;
+    color: #559AC8;
+}
+.disable{
+    color: #949494;
+}
+.disable:hover{
+    cursor: context-menu;
+    color:#949494;
+}
+.currentPage:hover{
+    cursor: context-menu;
+    text-decoration: none;
+}
+.pageOverflow{
+    display: none;
+}
+
+/* 頁面捲動至最上層 */
+.goTop{
+    position: absolute;
+    right:-25px;
+    bottom: 100px;
+    cursor: pointer;
+    transition: 1.5s;
+}
+.hidden {
+    bottom: 40%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1.5s;
+    pointer-events: none;
+  }
+
+
+
+/* 頁尾 */
+.footer{
+    height: 90px;
+    background-color: #559AC8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #fff;
+    line-height: 25px;
+}
+.footer p:nth-child(2){
+    color: #FFD366;
+}
+
